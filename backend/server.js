@@ -76,6 +76,7 @@ io.on('connection', (socket) => {
   socket.on('disconnect', () => {
     console.log(`[DEFAULT] Client disconnected: ${socket.id}`);
   });
+  
 });
 
 // -------------------------------------------
@@ -112,7 +113,7 @@ adminNamespace.on('connection', (socket) => {
   socket.on('disconnect', () => {
     console.log(`[ADMIN] Admin disconnected: ${socket.id}`);
   });
-  
+
 });
 
 // Start server
